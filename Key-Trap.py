@@ -3,8 +3,11 @@ from pynput.mouse import Listener as MouseListener
 import threading
 import cv2
 import ctypes
+import pyautogui as pag
 
 cap = cv2.VideoCapture(0)
+
+pag.hotkey("win", "d")
 
 class KeyMonitor:
     def __init__(self):
